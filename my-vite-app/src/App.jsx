@@ -1,35 +1,33 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import nameofimage from "file name" use name of the image for using image
+// import viteLogo from '/vite.svg'
+
+// import './App.css'
+import Hello from "./Hello"
+import Bye from "./Bye"
+//first hello is the componet and second is for file name.
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const headingStyle = {
+    color:"green",
+    backgroundColor:"yellow",
+    fontSize:"30px",
+    textAlign:"center"
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 style={headingStyle}>App Component</h1>
+      <Hello/>
+      <Bye/>
+      <img src={reactLogo} width='50px'/>
+
     </>
   )
 }
 
 export default App
+//  <App /> it means app function /component is calling.
+//<component Name /> here calling  componen
+//<img src={reactLogo}/> {name of the image }
+//for inline styling we create a object inside  the component.
