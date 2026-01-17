@@ -1,8 +1,15 @@
 import { useState } from 'react'
-function App() {
+ function App() {
    let [count, setCount] = useState(0);
+
    function clickfun(){
     setCount(count + 1);
+   }
+   function clickfunDec(){
+    setCount(count - 1)
+   }
+     function clickfunCl(){
+    setCount(0)
    }
   const headingStyle = {
     color:"green",
@@ -19,6 +26,17 @@ function App() {
     justifyContent:"center"
     
     }
+    const styleButton = {
+      backgroundColor:"red",
+      color:"white",
+    }
+    const styleButClear = {
+      backgroundColor:"blue",
+      color:"white",
+      margin:"20px"
+           
+    }
+
   
    
   
@@ -27,7 +45,11 @@ function App() {
     <div style={numStyle}>
       <h1 style={headingStyle}>Count Number</h1>
       <h2 style={numStyle}>{count}</h2>
-        <button  onClick={clickfun}>click</button>
+      <div>
+        <button  onClick={clickfunDec} style={styleButton}>-</button>
+         <button  onClick={clickfunCl} style={styleButClear}>clear</button>
+         <button  onClick={clickfun} style={styleButton}>+</button>
+         </div>
         </div>
     </>
   );
