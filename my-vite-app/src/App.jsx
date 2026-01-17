@@ -1,4 +1,7 @@
+import "./Index.css"
 import { useState } from 'react'
+import Bye from './Bye'
+
  function App() {
    let [count, setCount] = useState(0);
 
@@ -26,10 +29,7 @@ import { useState } from 'react'
     justifyContent:"center"
     
     }
-    const styleButton = {
-      backgroundColor:"red",
-      color:"white",
-    }
+   
     const styleButClear = {
       backgroundColor:"blue",
       color:"white",
@@ -44,12 +44,14 @@ import { useState } from 'react'
     <>
     <div style={numStyle}>
       <h1 style={headingStyle}>Count Number</h1>
+      <p className="test">This is very small program.</p>
       <h2 style={numStyle}>{count}</h2>
       <div>
-        <button  onClick={clickfunDec} style={styleButton}>-</button>
+        <button  onClick={clickfunDec} style={{ backgroundColor:"red",color:"white"}}>-</button>
          <button  onClick={clickfunCl} style={styleButClear}>clear</button>
-         <button  onClick={clickfun} style={styleButton}>+</button>
+         <button  onClick={clickfun} style={{ backgroundColor:"red",color:"white"}}>+</button>
          </div>
+         <Bye />
         </div>
     </>
   );
