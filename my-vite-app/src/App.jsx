@@ -1,10 +1,6 @@
-// import "./Index.css"
-// import { useState } from 'react'
-// import Hello from './Hello'
 import Task from './Task'
-
- function App() {
-   
+ function App() 
+ {   
   return<>
  <Task />
   </>
