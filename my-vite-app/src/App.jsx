@@ -1,15 +1,12 @@
-import Task from './Task'
- function App() 
- {   
-  const isLoggedIn = true;
-   if(isLoggedIn)
-    {
-    return <Task/>
-   }
-   else{
-     return <h1>please log in</h1>
-   }
-  
+import Todo from './Todo.jsx';
+
+function App() {
+  return (
+    <>
+      <Todo />
+    </>
+  );
 }
 
 export default App;
+
