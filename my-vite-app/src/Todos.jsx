@@ -29,8 +29,12 @@ function Todos() {
 
   // go through each inputTask
   for (let i = 0; i < tasks.length; i++) {
-    if (i !== index) {
-      newTasks.push(tasks[i]); // add all tasks except the one to delete
+    // if (i !== index)  {  newTasks.push(tasks[i]); // add all tasks except the one to delete }
+    if( i == index){
+        continue
+    }
+    else{
+        newTasks.push(tasks[i]);
     }
   }
 
@@ -43,9 +47,8 @@ function Todos() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px"}}>
       <h2>Simple To Do App</h2>
-
       <input
         type="text"
         placeholder="Enter inputTask"
@@ -56,14 +59,10 @@ function Todos() {
 {/* e.target.value = “Give me the text written inside the input box” User typed Hello then  e.target.value = "Hello" */}
   {/* setInputTask(e.target.value) “Whenever the user types something,  take that text and save it inside inputTask.” */}
 
-      <button onClick={handleAddOrUpdate}>
-        {editIndex === null ? "Add Task" : "Update Task"}
-      </button>
-
+      <button onClick={handleAddOrUpdate}>{editIndex === null ? "Add Task" : "Update Task"}</button>
       <ul>
         {tasks.map((item, index) => (
-          <li key={index}>
-            {item}
+          <li key={index}>{item}
             <button onClick={() => handleEdit(index)}>Update</button>
             <button onClick={() => handleDelete(index)}>Delete</button>
           </li>
