@@ -35,7 +35,7 @@ function Todo(){
                  <li key={index}>
                     <span 
                     style={{textDecoration:todo.completed?'line-through':'none'}}>
-                    todo.text</span>
+                    {todo.title}</span>
                     <button onClick={()=>handleDelete(index)}>delete</button>
                  </li>
            ))}

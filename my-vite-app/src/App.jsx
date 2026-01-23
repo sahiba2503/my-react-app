@@ -1,12 +1,14 @@
-import Todo from './Todo.jsx';
+// import Todo from './Todo.jsx';
+import Todos from './Todos.jsx';
 
 function App() {
   return (
     <>
-      <Todo />
+      <Todos />
     </>
   );
 }
 
 export default App;
+
 
