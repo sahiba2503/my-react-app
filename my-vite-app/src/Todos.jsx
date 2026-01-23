@@ -1,39 +1,44 @@
 import { useState } from "react";
 
 function Todos() {
-  const [task, setTask] = useState(""); 
-  const [tasks, setTasks] = useState([]);   
-  const [editIndex, setEditIndex] = useState(null); 
+  const [inputTask, setInputTask] = useState("");      // input value
+  const [tasks, setTasks] = useState([]);    // inputTask list
+  const [editIndex, setEditIndex] = useState(null); // which inputTask is editing
 
- 
+  // Add or Update inputTask
   const handleAddOrUpdate = () => {
-    if (task === "") return;
+    if (inputTask === "") return;
 
     if (editIndex === null) {
-      setTasks([...tasks, task]);
+      // ADD new inputTask
+      setTasks([...tasks, inputTask]);
     } else {
-       const updatedTasks = [...tasks];
-      updatedTasks[editIndex] = task;
+      // UPDATE existing inputTask
+      const updatedTasks = [...tasks];
+      updatedTasks[editIndex] = inputTask;
       setTasks(updatedTasks);
       setEditIndex(null);
     }
 
-    setTask("");
+    setInputTask(""); // clear input
   };
-  const handleDelete = (index) => {
-  let newTasks = []; 
 
+  // Delete inputTask
+  const handleDelete = (index) => {
+  let newTasks = []; // empty list
+
+  // go through each inputTask
   for (let i = 0; i < tasks.length; i++) {
     if (i !== index) {
-      newTasks.push(tasks[i]);
+      newTasks.push(tasks[i]); // add all tasks except the one to delete
     }
   }
 
-  setTasks(newTasks); 
+  setTasks(newTasks); // update the inputTask list
 };
-  
+  // Edit inputTask
   const handleEdit = (index) => {
-    setTask(tasks[index]);
+    setInputTask(tasks[index]);
     setEditIndex(index);
   };
 
@@ -43,10 +48,13 @@ function Todos() {
 
       <input
         type="text"
-        placeholder="Enter task"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
+        placeholder="Enter inputTask"
+        value={inputTask}
+        onChange={(e) => setInputTask(e.target.value)}
       />
+{/* setInputTask(e.target.value) -> what ever user enter inside the input box react set that's value inside InputTask with the help of setInputTask method  . e like a messenger or event*/}
+{/* e.target.value = “Give me the text written inside the input box” User typed Hello then  e.target.value = "Hello" */}
+  {/* setInputTask(e.target.value) “Whenever the user types something,  take that text and save it inside inputTask.” */}
 
       <button onClick={handleAddOrUpdate}>
         {editIndex === null ? "Add Task" : "Update Task"}
