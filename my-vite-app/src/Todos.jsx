@@ -48,7 +48,7 @@ function Todos() {
 
   return (
     <div style={{ padding: "20px"}}>
-      <h2>Simple To Do App</h2>
+      <h2> To Do App</h2>
       <input
         type="text"
         placeholder="Enter inputTask"
