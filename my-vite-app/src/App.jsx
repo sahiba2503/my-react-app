@@ -1,10 +1,12 @@
 // import Todo from './Todo.jsx';
-import Todos from './Todos.jsx';
+import Likebutton from './Likebutton.jsx';
+import LikeUnlikeBtn from './LikeUnlikeBtn';
 
 function App() {
   return (
     <>
-      <Todos />
+      <Likebutton/>
+      <LikeUnlikeBtn />
     </>
   );
 }
