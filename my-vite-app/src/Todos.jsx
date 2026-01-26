@@ -38,12 +38,15 @@ function Todos() {
     }
   }
 
-  setTasks(newTasks); // update the inputTask list
+  setTasks(newTasks); 
+ setInputTask("");
+  // update the inputTask list
 };
   // Edit inputTask
   const handleEdit = (index) => {
     setInputTask(tasks[index]);
-    setEditIndex(index);
+     setEditIndex(index);
+    
   };
 
   return (
