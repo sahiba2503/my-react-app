@@ -18,7 +18,7 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   padding: 0.5rem;
+   padding: 1rem;
    min-width: 470px;
    
 }
@@ -82,13 +82,11 @@ li{
 }
 .TopicColorR{
     color:red;
-    font-size:larger;
     font-weight: 700;
 }
 .TopicColorB{
     color:#467bdc;
-    font-size:larger;
-    font-weight: 700;
+      font-weight: 700;
 }
 
 .secondNav{
@@ -97,18 +95,73 @@ li{
       font-size: 0.8rem;
        background-color: #467bdc;
     color:white;
-    padding: 0.5rem 1rem; 
+    padding: 1rem; 
     position: relative;      
 }
 .secondNav span{
     margin-right: 1rem;
 }
 .RightSidBar{
+     /* border: 2px solid black; */
+     background-color:rgb(245, 241, 241);
+     padding: 1rem;
      float: right;
     position: absolute;
-    top:90px;
+    top:110px;
     right: 0;
-    /* border: 2px solid black; */
-    width: 25%;
+     width: 25%;
      
+}
+.sideBox1{
+    width: 100%;
+   margin-bottom: 40px;
+   /* margin-top: 20px; */
+}
+.home{
+   /* background-color: red; */
+   position: absolute;
+   top: 110px;
+   right: 25%;
+   left: 20%;
+   width: 55%;
+   padding: 1rem;
+}
+.chenge{
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+.mainHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.mainResponsivBtn{
+    /* border: 2px solid black; */
+     width: 11%;
+    min-width: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainResponsivBtn span{
+    /* border: 2px solid black; */
+    width: 1.9rem;
+    height: 1.9rem;
+    color:white;
+    background-color: #6c9af0;
+    padding-top: 5px;
+}
+.Maincontainer{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding:   1rem 1rem 0 1rem;
+  }
+.Maincontainer img{
+    width: 32%;
+    margin-bottom: 1.3rem;
+         
 }
