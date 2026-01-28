@@ -4,6 +4,7 @@ import subject3 from "./assets/css.svg";
 import subject4 from "./assets/html.svg";
 import subject5 from "./assets/sass.svg";
 import subject6 from "./assets/javascript.svg";
+
 function MainContainer(){
     return(
         <>
@@ -26,8 +27,7 @@ function MainContainer(){
                     <img src={subject5} alt="subjectName" />
                      <img src={subject6} alt="subjectName" />
             </div>
-            {/* <div> */}
-          <div className="mainHeading">
+            <div className="mainHeading">
         <h1>New Projects</h1>  
         <div className="mainResponsivBtn">   
         <span className="chenge">1</span>
