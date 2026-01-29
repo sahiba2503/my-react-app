@@ -64,9 +64,9 @@ border-radius: 50%;
      height: 1.5rem;
 }
 .Leftsidebar{
-    border:2px solid rgb(231, 223, 223);
-    width: 20%;
-   
+   width: 20%;
+    background-color: rgb(245, 244, 244);
+    padding-bottom: 1rem;
 }
 #yahuLogo{
     width: 100%;
@@ -118,13 +118,14 @@ li{
    /* margin-top: 20px; */
 }
 .home{
-   /* background-color: red; */
+    border: 1px solid rgb(225, 222, 222);
    position: absolute;
    top: 110px;
    right: 25%;
    left: 20%;
    width: 55%;
-   padding: 1rem;
+   padding: 1rem 1rem 3rem 1rem;
+
 }
 .chenge{
     /* border: 1px solid black; */
@@ -164,4 +165,41 @@ li{
     width: 32%;
     margin-bottom: 1.3rem;
          
+}
+.Reconrd{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.Reconrd img{
+    border: 1px solid rgb(162, 159, 159);
+    width: 32%;
+    height: 150px;
+}
+.mainHeading button{
+    background-color: #467bdc;
+    color:white;
+    padding: 0 1rem;
+    border: none;
+}
+.codelablBox{
+background-color: rgb(247, 244, 244);
+    width: 32%;
+    padding: 0.5rem;
+
+}
+.codelablBox img{
+    width: 100%;
+}
+.codelablBox p{
+    color:red;
+}
+.cssCodelabl{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
