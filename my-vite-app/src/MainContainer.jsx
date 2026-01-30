@@ -6,6 +6,14 @@ import subject4 from "./assets/html.svg";
 import subject5 from "./assets/sass.svg";
 import subject6 from "./assets/javascript.svg";
 
+import subject01 from "./assets/download (1).jpg";
+import subject02 from "./assets/download (2).jpg";
+import subject03 from "./assets/download (3).jpg";
+import subject04 from "./assets/download (4).jpg";
+import subject05 from "./assets/download.jpg";
+import subject06 from "./assets/images (1).jpg";
+
+
 export default function MainContainer(){
     return(
         <>
@@ -40,9 +48,9 @@ export default function MainContainer(){
          </div>
           <hr></hr>
           <div className="Record">           
-                <img src={subject1} alt="subjectName" />
-                 <img src={subject2} alt="subjectName" />
-                  <img src={subject3} alt="subjectName" />          
+                <img src={subject01} alt="subjectName" />
+                 <img src={subject02} alt="subjectName" />
+                  <img src={subject03} alt="subjectName" />          
           </div>
          </div>
 
@@ -55,17 +63,17 @@ export default function MainContainer(){
               <hr></hr>
               <div className="cssCodelabl">
                 <div className="codelablBox">
-                <img src={subject4} alt="subjectName" />
+                <img src={subject04} alt="subjectName" />
                 <p>Ribbon Style 18</p>
                 <p>👁️</p>
                 </div>
                  <div className="codelablBox">
-                <img src={subject5} alt="subjectName" />
+                <img src={subject05} alt="subjectName" />
                 <p>Counter Style 302</p>
                 <p>👁️</p>
                 </div>
                 <div className="codelablBox">
-                <img src={subject6} alt="subjectName" />
+                <img src={subject06} alt="subjectName" />
                 <p>Pricing Table Style 322</p>
                 <p>👁️</p>
                 </div>
