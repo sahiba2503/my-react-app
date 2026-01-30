@@ -6,14 +6,7 @@ import subject4 from "./assets/html.svg";
 import subject5 from "./assets/sass.svg";
 import subject6 from "./assets/javascript.svg";
 
-// import subject7 from "poster.jpg";
-// import subject9 from "poster2.png";
-// import subject8 from "poster3.jpg";
-// import subject10 from "poster4.png";
-// import subject11 from "logo5.svg";
-// import subject12 from "logo6.png";
-
-function MainContainer(){
+export default function MainContainer(){
     return(
         <>
         <div className="home">
@@ -46,7 +39,7 @@ function MainContainer(){
            </div> 
          </div>
           <hr></hr>
-          <div className="Reconrd">           
+          <div className="Record">           
                 <img src={subject1} alt="subjectName" />
                  <img src={subject2} alt="subjectName" />
                   <img src={subject3} alt="subjectName" />          
@@ -82,4 +75,3 @@ function MainContainer(){
         </>
     )
 }
-export default MainContainer;
