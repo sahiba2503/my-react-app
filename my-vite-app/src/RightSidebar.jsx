@@ -1,4 +1,4 @@
-import yahuposter from "./assets/sidelaravel.jpg"
+import yahuposter from "./assets/poster2.png"
 import yahuPosters from "./assets/yahuPosters.png"
 
 function RightSidebar(){

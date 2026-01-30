@@ -1,6 +1,6 @@
 
 import "./App.css"
-import logo from './assets/yahu.svg';
+// import logo from './assets/poster5.svg';
 function LeftSidebar(){    
                     
             
@@ -8,8 +8,8 @@ function LeftSidebar(){
         <>
         <div class="Leftsidebar">
 
-        <div id='yahuLogo'>
-        <img src={logo} alt="logo" />
+        <div id='yahuLogo' style={{textAlign:"center",border:"2px solid black",borderRadius:"50%"}}>
+       Hello !
         </div>
         <ul>
             <li className="TopicColorR" >LEARN HTML</li>
