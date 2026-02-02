@@ -1,11 +1,11 @@
 import HTML from './assets/HTML.jpg'
-function About(){
+function Template(){
      return(
         <>
         <div className="home">
             <div>
         <div className="mainHeading">
-        <h1>About</h1>  
+        <h1>Template</h1>  
         <div className="mainResponsivBtn">   
         <span className="chenge">1</span>
          <span className="chenge">2</span>
@@ -69,5 +69,5 @@ function About(){
     )
 
 }
-export default About;
+export default Template;
 

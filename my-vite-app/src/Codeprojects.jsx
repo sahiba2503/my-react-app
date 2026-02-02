@@ -1,11 +1,11 @@
 import HTML from './assets/HTML.jpg'
-function Contact(){
+function codeprojects(){
      return(
         <>
         <div className="home">
             <div>
         <div className="mainHeading">
-        <h1>Contact</h1>  
+        <h1>Codeprojects</h1>  
         <div className="mainResponsivBtn">   
         <span className="chenge">1</span>
          <span className="chenge">2</span>
@@ -69,4 +69,4 @@ function Contact(){
     )
 
 }
-export default Contact;
+export default codeprojects;
