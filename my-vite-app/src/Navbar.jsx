@@ -29,7 +29,7 @@ export default function Navbar(){
       <a href="/sortcuts">KEY SORTCUTS</a>
        <a href="/template">FREE TEMPLEATE</a>
        <a href="/codelab">CODE LAB</a>           
-          <a href="/Result">/ QUESTION</a>
+          <a href="/Result">/ RESULT</a>
     </div>
     </div>
      <Routes>
