@@ -1,24 +1,23 @@
-import "./App.jsx";
-import LeftSlidebar from "./LeftSidebar";
-import Navbar  from "./Navbar"; 
-import  RightSidebar from './RightSidebar';
+import LeftSidebar from "./LeftSidebar";
+import Navbar from "./Navbar"; 
+import RightSidebar from "./RightSidebar";
 import Footer from "./Footer.jsx";
-import {useEffect} from 'react'
+import { useEffect } from "react";
+
 function App() {
-  // only first time will load the useEffect fun when i use []
-  useEffect(()=>{
+  useEffect(() => {
     console.log("Hello!");
-  });
+   
+  }, []);
+
   return (
     <>
-     <Navbar />
-    <LeftSlidebar />
-     <RightSidebar />
-       <Footer />
+      <Navbar />
+      <LeftSidebar />
+      <RightSidebar />
+      <Footer />
     </>
   );
 }
 
 export default App;
-
-

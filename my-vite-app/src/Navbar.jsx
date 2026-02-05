@@ -5,7 +5,7 @@ import Home from"./Home"
 import Template from"./Template"
 import Sortcuts from "./Sortcuts"
 import Codelab from"./Codelab"
-import Interviewquestions  from "./Interviewquestions"
+import Result  from "./Result"
 export default function Navbar(){
    return(
     <BrowserRouter>
@@ -29,7 +29,7 @@ export default function Navbar(){
       <a href="/sortcuts">KEY SORTCUTS</a>
        <a href="/template">FREE TEMPLEATE</a>
        <a href="/codelab">CODE LAB</a>           
-          <a href="/interviewquestion">INTERVIEW QUESTION</a>
+          <a href="/Result">/ QUESTION</a>
     </div>
     </div>
      <Routes>
@@ -37,7 +37,7 @@ export default function Navbar(){
        <Route path="/sortcuts" element={<Sortcuts />} />
        <Route path="/template" element={<Template />} />
        <Route path="/codelab" element={<Codelab />} />
-        <Route path="/interviewquestion" element={<Interviewquestions />} />
+        <Route path="/Result" element={<Result />} />
      </Routes>
             </BrowserRouter>
     )
