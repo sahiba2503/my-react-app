@@ -243,3 +243,9 @@ border-radius: 50%;
    color:rgb(241, 236, 236);
    padding: 0.5rem 0;
 }
+input{
+  
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
