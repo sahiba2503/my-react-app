@@ -1,3 +1,5 @@
+//implement css module
+import styles from "./Codelab.module.css";
 import HTML from './assets/HTML.jpg'
 function Codelab(){
      return(
@@ -14,7 +16,7 @@ function Codelab(){
 
             <hr></hr>
             <div className="Maincontainer">
-                <img src={HTML} alt="subjectName" />
+                <img src={HTML} className={styles.bor} alt="subjectName" />
                  <img src={HTML} alt="subjectName" />
                   <img src={HTML} alt="subjectName" />
                    <img src={HTML} alt="subjectName" />
