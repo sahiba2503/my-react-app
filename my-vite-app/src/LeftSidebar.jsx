@@ -1,30 +1,32 @@
 
 import "./App.css"
-// import logo from './assets/poster5.svg';
-import HTML from "./assets/HTML.jpg"
-function LeftSidebar(){    
-                    
+import Learncss from "./Learncss";
+import Learnhtml from "./Learnhtml";
+import Learnsass from "./Learnsass";
+import Home from "./Home"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+function LeftSidebar(){                    
             
     return(
-        <>
-        <div class="Leftsidebar">
-
-        <div id='yahuLogo' style={{textAlign:"center",border:"2px solid black",borderRadius:"50%"}}>
-          Hello!
-        </div>
+        <BrowserRouter>
+         <div className='Leftsidebar'>
         <ul>
-            <li className="TopicColorR" >LEARN HTML</li>
-            <li className="TopicColorB" >LEARN CSS</li>
-            <li className="TopicColorR" >LEARN SASS</li>
-            <li className="TopicColorB" >LEARN Bootstrap</li>
-            <li className="TopicColorR" >LEARN JavaSript</li>
-            <li className="TopicColorB" >LEARN Advance.js</li>
-            <li className="TopicColorR" >LEARN jQuery</li>
-            <li className="TopicColorB" >LEARN PHP</li>
-            <li className="TopicColorR" >LEARN HTML</li>
-        </ul>
-        </div>
-        </>
+
+      <a href="/learnHtml">LEARN HTML</a>
+       <a href="/learnCss">LEARN CSS</a>
+        <a href="/learnSass">LEARN SASS</a>   
+        </ul>    
+     </div>
+    
+      <Routes>
+         <Route path="/" element={<Home />} />
+        <Route path="/learnHtml" element={<Learnhtml />} />
+        <Route path="/learnCss" element={<Learncss />} />
+        <Route path="/learnSass" element={<Learnsass />} />
+        </Routes>
+             </BrowserRouter>
+
+        
     )
 }
 export default LeftSidebar;
