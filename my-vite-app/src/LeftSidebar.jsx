@@ -10,12 +10,20 @@ function LeftSidebar(){
     return(
         <BrowserRouter>
          <div className='Leftsidebar'>
-        <ul>
+        <div className="list">
 
       <a href="/learnHtml">LEARN HTML</a>
        <a href="/learnCss">LEARN CSS</a>
         <a href="/learnSass">LEARN SASS</a>   
-        </ul>    
+
+         <a href="/learnHtml">LEARN HTML</a>
+       <a href="/learnCss">LEARN CSS</a>
+        <a href="/learnSass">LEARN SASS</a>  
+
+         <a href="/learnHtml">LEARN HTML</a>
+       <a href="/learnCss">LEARN CSS</a>
+        <a href="/learnSass">LEARN SASS</a>  
+        </div>  
      </div>
     
       <Routes>

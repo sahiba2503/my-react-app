@@ -18,7 +18,7 @@ export default function Navbar(){
         
          <div className='navLogos'>
              <a className='navLogo' >❤️</a>
-             <a className='navLogo'>✌️</a>
+             <a className='navLogo'>👁️</a>
              <a className='navLogo'>🤍</a>
              <button>Login</button>
              <button>Signup</button>
