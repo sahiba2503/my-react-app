@@ -9,8 +9,8 @@ function codeprojects(){
         <div className="mainHeading">
         <h1>Codeprojects</h1>  
         <div className="mainResponsivBtn">   
-        <span className="chenge">1</span>
-         <span className="chenge">2</span>
+        <span className="chenge">+</span>
+         <span className="chenge">-</span>
            </div> 
          </div>
 
@@ -29,8 +29,8 @@ function codeprojects(){
             <div className="mainHeading">
         <h1>New Projects</h1>  
         <div className="mainResponsivBtn">   
-        <span className="chenge">1</span>
-         <span className="chenge">2</span>
+        <span className="chenge">+</span>
+         <span className="chenge">-</span>
            </div> 
          </div>
           <hr></hr>
