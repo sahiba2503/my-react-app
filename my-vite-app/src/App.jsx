@@ -6,6 +6,7 @@
 // import Footer from "./Footer.jsx";
 import Styling from "./Styling.jsx"
  import UseState from "./assets/UseState.jsx";
+ import UseRef from "./UseRef.jsx";
 function App() {
     return (
     <>
@@ -16,7 +17,7 @@ function App() {
       
       <Styling />
       <UseState />
-   
+       <UseRef />
     </>
   );
 }
