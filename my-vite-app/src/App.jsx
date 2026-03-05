@@ -7,7 +7,18 @@
 import Styling from "./Styling.jsx"
  import UseState from "./assets/UseState.jsx";
  import UseRef from "./UseRef.jsx";
+import { useEffect } from "react";
 function App() {
+  
+   useEffect(()=>{
+    console.log("componet loaded");
+    alert("component is loaded")
+   
+   },[]
+
+   );
+  
+  
     return (
     <>
       {/* <Navbar />
@@ -23,4 +34,4 @@ function App() {
 }
 
  export default App;
-
+//[] means run only once
