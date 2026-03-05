@@ -4,7 +4,8 @@
 // import Navbar from "./Navbar"; 
 // import RightSidebar from "./RightSidebar";
 // import Footer from "./Footer.jsx";
- import Styling from "./Styling.jsx"
+import Styling from "./Styling.jsx"
+ import UseState from "./assets/UseState.jsx";
 function App() {
     return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Footer /> */}
       
       <Styling />
+      <UseState />
    
     </>
   );
