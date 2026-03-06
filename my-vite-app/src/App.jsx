@@ -8,6 +8,7 @@ import Styling from "./Styling.jsx"
  import UseState from "./assets/UseState.jsx";
  import UseRef from "./UseRef.jsx";
 import { useEffect } from "react";
+import Useprop from "./Useprop";
 function App() {
   
    useEffect(()=>{
@@ -29,6 +30,7 @@ function App() {
       <Styling />
       <UseState />
        <UseRef />
+       <Useprop />
     </>
   );
 }
