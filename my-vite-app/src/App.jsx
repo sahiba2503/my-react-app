@@ -13,8 +13,8 @@ import ConditionalRen from "../ConditionalRen.jsx";
 function App() {
   
    useEffect(()=>{
-    console.log("componet loaded");
-    alert("component is loaded")
+    console.log("componet is loaded");
+    
    
    },[]
 
