@@ -7,9 +7,10 @@ function Student(props) {
   );
 }
 
-function UseProps() {
+function Useprops() {
   return (
     <div>
+        
       <h2>Student Details</h2>
 
       <Student name="Ali" roll="1" />
@@ -20,4 +21,4 @@ function UseProps() {
   );
 }
 
-export default UseProps;
+export default Useprops;

@@ -9,7 +9,8 @@ import { useEffect } from "react";
 import Useprop from "./Useprop";
 import ConditionalRen from "./ConditionalRen.jsx";
 import StoreStudentData from "./storeStudentData.jsx";
-import UseProps from "./Useprops.js";
+import Useprops from "./Useprops.jsx";
+import UseEffectProgram from "./UseEffectProgram.jsx";
 function App() {
   
    useEffect(()=>{
@@ -31,7 +32,8 @@ function App() {
        <Useprop />
        <ConditionalRen />
        <StoreStudentData />
-       <UseProps />
+       <Useprops />
+       <UseEffectProgram />
 </>)
 }
  export default App;
