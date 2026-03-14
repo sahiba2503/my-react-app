@@ -11,6 +11,8 @@ import ConditionalRen from "./ConditionalRen.jsx";
 import StoreStudentData from "./storeStudentData.jsx";
 import Useprops from "./Useprops.jsx";
 import UseEffectProgram from "./UseEffectProgram.jsx";
+import ReactRouter from "./ReactRouter.jsx";
+
 function App() {
   
    useEffect(()=>{
@@ -34,6 +36,7 @@ function App() {
        <StoreStudentData />
        <Useprops />
        <UseEffectProgram />
+       <ReactRouter />
 </>)
 }
  export default App;
